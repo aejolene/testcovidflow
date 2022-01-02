@@ -43,32 +43,9 @@ Positive Test Date: {text input for: &#39;datePos&#39;}
 
 &gt; [[Asymptomatic&lt;-You have no symptoms]]
 &gt; [[Improved&lt;-Your symptoms have improved or are gone now]]
-&gt; [[Sick&lt;-Your symptoms have not yet improved]]
+&gt; [[Sick&lt;-Your symptoms have not yet improved after 5 days]]
 
-</tw-passagedata><tw-passagedata pid="3" name="Untitled Passage" tags="" position="1405,208.5" size="100,100">sampleDate: &#39;12/24/2021&#39;
-sampleString: &#39;what&#39;
-dateEntered: &#39;MM/DD/YYYY&#39;
---
-
-Here&#39;s a sample date:
-
-Take a user entered date
-convert it to UTC
-Do math on it
-Convert back to local tz and display
-
-{sampleDate}
-
-{text input for: &#39;dateEntered&#39;}
-
-[JavaScript]
-Date.prototype.addDays = function(days) {
-    var date = new Date(&#39;{sampleDate}&#39;);
-    date.setDate(date.getDate() + days);
-    return date;
-}
-var anotherDate = new Date().addDays(5);
-write(anotherDate.toLocaleDateString(&#39;en-us&#39;));</tw-passagedata><tw-passagedata pid="4" name="Exposed" tags="" position="781,474.5" size="100,100">dateExposed: &#39;MM/DD/YYYY&#39;
+</tw-passagedata><tw-passagedata pid="3" name="Exposed" tags="" position="781,474.5" size="100,100">dateExposed: &#39;MM/DD/YYYY&#39;
 --
 
 You were exposed to COVID-19.
@@ -83,7 +60,7 @@ Adults: This includes two doses of Pfizer/Moderna or one of J&amp;J &#39;&#39;pl
 Children: This includes two doses of Pfizer, with the second dose received 2 or more weeks ago.  
 
 &gt; [[YesVax&lt;-Yes, you are vaccinated]]
-&gt; [[NoVax&lt;-No, you are not fully vaccinated]]</tw-passagedata><tw-passagedata pid="5" name="YesVax" tags="" position="650,729.5" size="100,100">You do not need to quarantine following an exposure, but should wear a well-fitting mask for 10 days after the exposure when you are around others.
+&gt; [[NoVax&lt;-No, you are not fully vaccinated]]</tw-passagedata><tw-passagedata pid="4" name="YesVax" tags="" position="650,729.5" size="100,100">You do not need to quarantine following an exposure, but should wear a well-fitting mask for 10 days after the exposure when you are around others.
 
 VDH recommends taking a COVID-19 test 5 days after exposure. (Due to testing limitations, a test within 3-5 days after an exposure is acceptable). If you do develop symptoms, you should immediately quarantine until a negative test confirms symptoms are not from COVID-19.
 
@@ -96,7 +73,7 @@ Date.prototype.addDays = function(days) {
 var date = new Date().addDays(5);
 write(&quot;Your ideal test date is &quot; + date.toLocaleDateString(&#39;en-us&#39;));
 var mask = new Date().addDays(10);
-write(&quot;. Wear a mask at all times around others through &quot; + mask.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);</tw-passagedata><tw-passagedata pid="6" name="NoVax" tags="" position="835,730.5" size="100,100">Quarantine for 5 days as long as you do not develop symptoms within that time.
+write(&quot;. Wear a mask at all times around others through &quot; + mask.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);</tw-passagedata><tw-passagedata pid="5" name="NoVax" tags="" position="835,730.5" size="100,100">Quarantine for 5 days as long as you do not develop symptoms within that time.
 
 Wear a well-fitting mask for an additional 5 days when you are around others.
 
@@ -113,10 +90,10 @@ write(&quot;Do not come to school. Quarantine through &quot; + date.toLocaleDate
 var mask = new Date().addDays(10);
 write(&quot;. Wear a mask at all times around others through &quot; + mask.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);
 
-</tw-passagedata><tw-passagedata pid="7" name="Asymptomatic" tags="" position="1208,618.5" size="100,100">A shortened isolation period is possible if you are able to wear a mask around others for additional days.
+</tw-passagedata><tw-passagedata pid="6" name="Asymptomatic" tags="" position="1208,618.5" size="100,100">A shortened isolation period is possible if you are able to wear a mask around others for additional days.
 
 &gt; [[OKMaskAsym&lt;-You are able to wear a well-fitting mask around others]]
-&gt; [[NoMaskAsym&lt;-You are unable to consistently wear a well-fitting mask around others]]</tw-passagedata><tw-passagedata pid="8" name="Improved" tags="" position="1654,783.5" size="100,100">dateSym: &#39;MM/DD/YYYY&#39;
+&gt; [[NoMaskAsym&lt;-You are unable to consistently wear a well-fitting mask around others]]</tw-passagedata><tw-passagedata pid="7" name="Improved" tags="" position="1654,783.5" size="100,100">dateSym: &#39;MM/DD/YYYY&#39;
 --
 
 You have received a positive test and have had symptoms, although they have improved.  
@@ -126,14 +103,14 @@ Symptoms began on: {text input for: &#39;dateSym&#39;}
 A shortened isolation period is possible if you are able to wear a mask around others for additional days.
 
 &gt; [[OKMask&lt;-You are able to wear a well-fitting mask around others]]
-&gt; [[NoMask&lt;-You are unable to consistently wear a well-fitting mask around others]]</tw-passagedata><tw-passagedata pid="9" name="Sick" tags="" position="1754,430.5" size="100,100">dateSym: &#39;MM/DD/YYYY&#39;
+&gt; [[NoMask&lt;-You are unable to consistently wear a well-fitting mask around others]]</tw-passagedata><tw-passagedata pid="8" name="Sick" tags="" position="1754,430.5" size="100,100">dateSym: &#39;MM/DD/YYYY&#39;
 --
 
 Symptoms began on: {text input for: &#39;dateSym&#39;}
 
-Continue isolating for 10 days beginning from when your symptoms started. 
+Continue isolating for up to 10 days beginning from when your symptoms started. 
 
-[[Calculate Isolation Time]]</tw-passagedata><tw-passagedata pid="10" name="OKMask" tags="" position="1783,983.5" size="100,100">Isolate for **5 days**, beginning on the date your symptoms began and then wear a well-fitting mask around others for **5 additional days**.
+[[Calculate Isolation Time]]</tw-passagedata><tw-passagedata pid="9" name="OKMask" tags="" position="1783,983.5" size="100,100">Isolate for **5 days**, beginning on the date your symptoms began and then wear a well-fitting mask around others for **5 additional days**.
 
 **Note:** If you have a fever, continue to stay home longer than 5 days until your fever is gone for 24 hours without the use of fever reducing medications.
   
@@ -151,7 +128,7 @@ Date.prototype.addDays = function(days) {
 var date = new Date().addDays(5);
 write(&quot;Do not come to school. Isolate through &quot; + date.toLocaleDateString(&#39;en-us&#39;));
 var mask = new Date().addDays(10);
-write(&quot;. Wear a mask at all times around others through &quot; + mask.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);</tw-passagedata><tw-passagedata pid="11" name="NoMask" tags="" position="1903,983.5" size="100,100">Isolate for **10 full days**, beginning on the date your symptoms began.
+write(&quot;. Wear a mask at all times around others through &quot; + mask.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);</tw-passagedata><tw-passagedata pid="10" name="NoMask" tags="" position="1903,983.5" size="100,100">Isolate for **10 full days**, beginning on the date your symptoms began.
 
 **Note:** If you have a fever, do not end isolation and continue to stay home until your fever is gone for 24 hours without the use of fever reducing medications.
   
@@ -167,7 +144,7 @@ Date.prototype.addDays = function(days) {
     return date;
 }
 var date = new Date().addDays(10);
-write(&quot;Do not come to school. Isolate through &quot; + date.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);</tw-passagedata><tw-passagedata pid="12" name="OKMaskAsym" tags="" position="1076,948.5" size="100,100">
+write(&quot;Do not come to school. Isolate through &quot; + date.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);</tw-passagedata><tw-passagedata pid="11" name="OKMaskAsym" tags="" position="1076,948.5" size="100,100">
 
 Isolate for **5 days**, beginning on the date you took your positive test and then wear a well-fitting mask around others for &#39;&#39;5 additional days&#39;&#39;.
 
@@ -190,7 +167,7 @@ var mask = new Date().addDays(10);
 write(&quot;. Wear a mask at all times around others through &quot; + mask.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);  
 
 
-</tw-passagedata><tw-passagedata pid="13" name="NoMaskAsym" tags="" position="1325,914.5" size="100,100">Isolate for **10 full days**, beginning on the date you took your positive test.
+</tw-passagedata><tw-passagedata pid="12" name="NoMaskAsym" tags="" position="1325,914.5" size="100,100">Isolate for **10 full days**, beginning on the date you took your positive test.
 
 **Note:** If you have a fever, do not end isolation and continue to stay home until your fever is gone for 24 hours without the use of fever reducing medications.
   
@@ -207,7 +184,7 @@ Date.prototype.addDays = function(days) {
 }
 var date = new Date().addDays(10);
 write(&quot;Do not come to school. Isolate through &quot; + date.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);
-</tw-passagedata><tw-passagedata pid="14" name="Symptoms" tags="" position="972,512.5" size="100,100">If you (or your student) has
+</tw-passagedata><tw-passagedata pid="13" name="Symptoms" tags="" position="972,512.5" size="100,100">If you (or your student) has
 * A fever of 100.4 or over
 * Vomiting or diarrhea
 * Nasal discharge or difficulty breathing
@@ -218,7 +195,7 @@ write(&quot;Do not come to school. Isolate through &quot; + date.toLocaleDateStr
 * Red, irritated eye(s) with pain or drainage
 * A rash of unknown origin
 
-Stay home from school, contact your medical provider, and take a COVID-19 test.</tw-passagedata><tw-passagedata pid="15" name="Calculate Isolation Time" tags="" position="1846,582.5" size="100,100">Isolate for **10 full days**, beginning on the date your symptoms began.
+Stay home from school, contact your medical provider, and take a COVID-19 test.</tw-passagedata><tw-passagedata pid="14" name="Calculate Isolation Time" tags="" position="1846,582.5" size="100,100">Isolate for up to **10 full days**, beginning on the date your symptoms began.
 
 **Note:** If you have a fever, do not end isolation and continue to stay home until your fever is gone for 24 hours without the use of fever reducing medications.
   
