@@ -1,25 +1,26 @@
-<!DOCTYPE html><html><head><title>PHSSA Decision Guide</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>.small-caps{text-transform:uppercase;font-size:70%;letter-spacing:.075em}#backstage .panel h2{margin:0}#backstage .panel h2 button{text-align:left;background:none;border:none;width:100%;font-weight:400;text-transform:uppercase;font-size:70%;letter-spacing:.075em;font-size:11px;padding:0 8px}#backstage .panel h2 button:before{content:"\25BA";display:inline-block;width:1.25em}#backstage .panel h2 button:hover{color:#495057}#backstage .panel.open h2 button:before{content:"\25BC"}
+<!DOCTYPE html><html><head><title>PHSSA COVID-19 Decision Guide</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>.small-caps{text-transform:uppercase;font-size:70%;letter-spacing:.075em}#backstage .panel h2{margin:0}#backstage .panel h2 button{text-align:left;background:none;border:none;width:100%;font-weight:400;text-transform:uppercase;font-size:70%;letter-spacing:.075em;font-size:11px;padding:0 8px}#backstage .panel h2 button:before{content:"\25BA";display:inline-block;width:1.25em}#backstage .panel h2 button:hover{color:#495057}#backstage .panel.open h2 button:before{content:"\25BC"}
 #backstage table.history td.actions{width:2.5em}#backstage table.history td.go{border-right:1px solid #000}
 #backstage ul.tabs{list-style:none;margin:8px;padding:0;display:flex;border:1px solid #000;font-size:12px}#backstage ul.tabs li{flex-grow:1;border-right:1px solid #000;text-align:center}#backstage ul.tabs li:last-child{border-right:none}#backstage ul.tabs li button{color:#000;text-decoration:none;display:block;width:100%;height:28px;padding:8px;border:none;border-radius:0}#backstage ul.tabs li button.active{background:#000;color:#dee2e6}#backstage .tab-content{max-height:calc(100vh - $backstage-tab-height);overflow:auto}
 .small-caps{text-transform:uppercase;font-size:70%;letter-spacing:.075em}body.backstage-visible #backdrop{justify-content:flex-start;max-width:67vw}#backstage{position:fixed;top:0;right:0;bottom:0;width:33vw;max-height:100vh;font-size:18px;background:#dee2e6;color:#000;transform:translateX(100%);box-shadow:inset 2px 0 3px rgba(0,0,0,.25);font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu Cantarell,Helvetica Neue,sans-serif;font-size:80%}#backstage:before{content:"";position:absolute;z-index:2;top:calc(50% - 25px);right:calc(100% - 4px);height:50px;width:4px;background:#dee2e6}@media screen and (max-width:425px){#backstage{width:calc(100vw - 25px)}}#backstage.open{transform:none}#backstage .toggle-visibility{position:absolute;z-index:1;top:calc(50% - 25px);right:100%;width:25px;height:50px;padding:0;background:#dee2e6;color:#000;border:none;border-top-left-radius:25px;border-bottom-left-radius:25px;border-top-right-radius:0;border-bottom-right-radius:0;box-shadow:inset 2px 0 3px rgba(0,0,0,.25);font-size:18px}#backstage button{color:#000;background:transparent;padding:8px;border-radius:16px;border:1px solid #000}#backstage button:hover{background:#e9ecef}#backstage p{padding:0 8px}#backstage li,#backstage p,#backstage td{font-size:12px}#backstage input,#backstage select{color:#000;background:transparent;border:1px solid #000;padding:8px}#backstage table{background:transparent;table-layout:fixed;border-collapse:collapse;width:calc(100% - 16px);margin:8px}#backstage th{text-align:left}#backstage td{position:relative;border:1px solid #000;padding:8px;vertical-align:top}#backstage td:first-child{border-left:none}#backstage td:last-child{border-right:none}#backstage td button,#backstage td input{background:none;border:none;border-radius:0;position:absolute;top:0;left:0;bottom:0;width:100%;padding:8px}#backstage textarea{background:transparent;border:1px solid #000;color:#000;padding:8px;width:100%;height:7.75em}#backstage .block{display:block;margin:8px;width:calc(100% - 16px)}#backstage .disabled{color:#868e96}#backstage .indented-input{margin-left:calc(10em + 8px);font-size:12px}#backstage .input-group{display:flex;align-items:center}#backstage .input-group label:first-child{text-align:right;margin-right:8px;width:10em}#backstage .input-group input,#backstage .input-group select{flex-grow:1}#backstage .segmented-button{display:flex}#backstage .segmented-button button{border-left:none;border-radius:0;margin:0;flex-grow:1}#backstage .segmented-button button:first-child{border-left:1px solid #000;border-top-left-radius:16px;border-bottom-left-radius:16px}#backstage .segmented-button button:last-child{border-top-right-radius:16px;border-bottom-right-radius:16px}#backstage .segmented-button .fixed{flex-grow:0;min-width:24px}#backstage .tab-content{max-height:calc(100vh - 28px);overflow:auto}
 .fade-in{opacity:0;animation:fade-in 1s ease-out forwards}.fade-out{animation:fade-in 1s ease-out reverse forwards}.skip-animation{animation-delay:0s!important}@keyframes fade-in{0%{opacity:0}to{opacity:1}}
 #page .warnings{list-style-type:none;padding-left:0;margin-left:0}
 .small-caps{text-transform:uppercase;font-size:70%;letter-spacing:.075em}#backdrop{min-height:100vh;align-items:center}#backdrop,#page{display:flex;justify-content:center}#page{flex-direction:column;width:40em;min-height:calc(100vh - 2em);max-width:calc(100vw - 2em);line-height:150%;margin:1em;padding:4em 4em 2em;position:relative}#page article{flex-grow:1;display:flex}#page article>:first-child{margin-top:0;width:100%}#page footer,#page header{display:flex}#page footer>div,#page header>div{flex-grow:1}#page footer p,#page header p{margin:.5em 0 0}#page footer .center,#page header .center{text-align:center}#page footer .right p,#page header .right p{text-align:right}#page header{margin-top:0}#page header.has-content{border-bottom:1px solid #000}#page header.has-content+article>article>div>p:first-child,#page header.has-content+article>div>p:first-child{margin-top:1em}#page footer{margin-bottom:0}#page footer.has-content{border-top:1px solid #000}#page hr{border:none}#page hr:after{content:"* \A0   * \A0   *";display:block;text-align:center}#page .error,#page .warning{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu Cantarell,Helvetica Neue,sans-serif;font-size:80%;background:#fff5f5;color:#c92a2a;padding:.5em;border-left:4px solid #ffa8a8;position:relative;margin-bottom:1em;overflow:auto}#page .error :first-child,#page .warning :first-child{margin-top:0}#page .error :last-child,#page .warning :last-child{margin-bottom:0}#page .error a,#page .warning a{color:#c92a2a}#page .warning{background:#fff9db;color:#e67700}#page .warning a{color:#e67700}#page .fork p{display:flex;flex-direction:column;width:100%}#page .fork p a{display:block;flex-grow:1;text-align:center;padding:.5em}@media screen and (max-width:768px){#page{margin:0;width:100vw;max-width:100vw;min-height:100vh;padding:1em}}#spinner{position:absolute;bottom:0;right:0;opacity:0;transition:opacity .25s ease-in-out;pointer-events:none}#spinner.visible{display:block;opacity:1}
-*{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%;height:auto}input[type=text],select{padding:.25em}pre{white-space:pre-wrap}tw-storydata{display:none}</style></head><body><form id="cb-validation" action="javascript:void(0)"><button id="cb-validation-tester" hidden></button> <button id="cb-block-enter-key" hidden></button><div id="backdrop"><div id="page" aria-live="polite"><header><div class="left"></div><div class="center"></div><div class="right"></div></header><article></article><ul class="warnings"></ul><footer><div class="left"></div><div class="center"></div><div class="right"></div></footer><div id="spinner"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgogICAgPHJlY3QgeD0iMzEiIHk9IjE0IiB3aWR0aD0iMzgiIGhlaWdodD0iNzIiIHJ4PSI0IiBmaWxsPSJ3aGl0ZSIgLz4KICAgIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjI4IiBmaWxsPSJ3aGl0ZSIgLz4KCTxyZWN0IHg9IjM1IiB5PSIxOCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjY0IiByeD0iNCIgZmlsbD0id2hpdGUiIHN0cm9rZS13aWR0aD0iMnB4IiBzdHJva2U9ImJsYWNrIiAvPgogICAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMjAiIHN0cm9rZT0iYmxhY2siIGZpbGw9IndoaXRlIiBzdHJva2Utd2lkdGg9IjJweCIgLz4KCTxsaW5lIHgxPSI1MCIgeTE9IjUwIiB4Mj0iNTAiIHkyPSIzNyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIycHgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICAgICAgPGFuaW1hdGVUcmFuc2Zvcm0KICAgICAgICAgICAgYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIgogICAgICAgICAgICBiZWdpbj0iMHMiCiAgICAgICAgICAgIGR1cj0iMjBzIgogICAgICAgICAgICB0eXBlPSJyb3RhdGUiCiAgICAgICAgICAgIGZyb209IjAgNTAgNTAiCiAgICAgICAgICAgIHRvPSIzNjAgNTAgNTAiCiAgICAgICAgICAgIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIgogICAgICAgIC8+Cgk8L2xpbmU+Cgk8bGluZSB4MT0iNTAiIHkxPSI1MCIgeDI9IjQyIiB5Mj0iNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMnB4IiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgICAgIDxhbmltYXRlVHJhbnNmb3JtCiAgICAgICAgICAgIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIKICAgICAgICAgICAgYmVnaW49IjBzIgogICAgICAgICAgICBkdXI9IjEyMHMiCiAgICAgICAgICAgIHR5cGU9InJvdGF0ZSIKICAgICAgICAgICAgZnJvbT0iMCA1MCA1MCIKICAgICAgICAgICAgdG89IjM2MCA1MCA1MCIKICAgICAgICAgICAgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiCiAgICAgICAgLz4KCTwvbGluZT4KPC9zdmc+" width="40" height="40" alt=""></div></div></div></form><tw-storydata name="PHSSA Decision Guide" startnode="1" creator="Twine" creator-version="2.3.15" ifid="086A6FC3-9E6B-4E28-8B2B-28ECE1F4A03E" zoom="1" format="Chapbook" format-version="1.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Introduction" tags="" position="921,370.5" size="100,100">config.style.page.font: &quot;Source Sans Pro/Calibri/Candara/Arial/sans-serif 18&quot;
+*{box-sizing:border-box}body{margin:0;padding:0}img{max-width:100%;height:auto}input[type=text],select{padding:.25em}pre{white-space:pre-wrap}tw-storydata{display:none}</style></head><body><form id="cb-validation" action="javascript:void(0)"><button id="cb-validation-tester" hidden></button> <button id="cb-block-enter-key" hidden></button><div id="backdrop"><div id="page" aria-live="polite"><header><div class="left"></div><div class="center"></div><div class="right"></div></header><article></article><ul class="warnings"></ul><footer><div class="left"></div><div class="center"></div><div class="right"></div></footer><div id="spinner"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmlld0JveD0iMCAwIDEwMCAxMDAiPgogICAgPHJlY3QgeD0iMzEiIHk9IjE0IiB3aWR0aD0iMzgiIGhlaWdodD0iNzIiIHJ4PSI0IiBmaWxsPSJ3aGl0ZSIgLz4KICAgIDxjaXJjbGUgY3g9IjUwIiBjeT0iNTAiIHI9IjI4IiBmaWxsPSJ3aGl0ZSIgLz4KCTxyZWN0IHg9IjM1IiB5PSIxOCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjY0IiByeD0iNCIgZmlsbD0id2hpdGUiIHN0cm9rZS13aWR0aD0iMnB4IiBzdHJva2U9ImJsYWNrIiAvPgogICAgPGNpcmNsZSBjeD0iNTAiIGN5PSI1MCIgcj0iMjAiIHN0cm9rZT0iYmxhY2siIGZpbGw9IndoaXRlIiBzdHJva2Utd2lkdGg9IjJweCIgLz4KCTxsaW5lIHgxPSI1MCIgeTE9IjUwIiB4Mj0iNTAiIHkyPSIzNyIgc3Ryb2tlPSJibGFjayIgc3Ryb2tlLXdpZHRoPSIycHgiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICAgICAgPGFuaW1hdGVUcmFuc2Zvcm0KICAgICAgICAgICAgYXR0cmlidXRlTmFtZT0idHJhbnNmb3JtIgogICAgICAgICAgICBiZWdpbj0iMHMiCiAgICAgICAgICAgIGR1cj0iMjBzIgogICAgICAgICAgICB0eXBlPSJyb3RhdGUiCiAgICAgICAgICAgIGZyb209IjAgNTAgNTAiCiAgICAgICAgICAgIHRvPSIzNjAgNTAgNTAiCiAgICAgICAgICAgIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIgogICAgICAgIC8+Cgk8L2xpbmU+Cgk8bGluZSB4MT0iNTAiIHkxPSI1MCIgeDI9IjQyIiB5Mj0iNTAiIHN0cm9rZT0iYmxhY2siIHN0cm9rZS13aWR0aD0iMnB4IiBzdHJva2UtbGluZWNhcD0icm91bmQiPgogICAgICAgIDxhbmltYXRlVHJhbnNmb3JtCiAgICAgICAgICAgIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIKICAgICAgICAgICAgYmVnaW49IjBzIgogICAgICAgICAgICBkdXI9IjEyMHMiCiAgICAgICAgICAgIHR5cGU9InJvdGF0ZSIKICAgICAgICAgICAgZnJvbT0iMCA1MCA1MCIKICAgICAgICAgICAgdG89IjM2MCA1MCA1MCIKICAgICAgICAgICAgcmVwZWF0Q291bnQ9ImluZGVmaW5pdGUiCiAgICAgICAgLz4KCTwvbGluZT4KPC9zdmc+" width="40" height="40" alt=""></div></div></div></form><tw-storydata name="PHSSA COVID-19 Decision Guide" startnode="1" creator="Twine" creator-version="2.3.15" ifid="086A6FC3-9E6B-4E28-8B2B-28ECE1F4A03E" zoom="1" format="Chapbook" format-version="1.2.1" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Introduction" tags="" position="921,370.5" size="100,100">config.style.page.font: &quot;Source Sans Pro/Calibri/Candara/Arial/sans-serif 18&quot;
 config.style.page.color: &quot;gray-9 on white&quot;
 config.style.page.link.font: &quot;bold&quot;
-config.style.page.link.color: &quot;gray-9&quot;
+config.style.page.link.color: &quot;blue-8&quot;
 config.style.page.link.lineColor: &quot;red-8&quot;
 config.style.page.link.active.color: &quot;red-8 on red-0&quot;
 config.style.page.header.font: &quot;16&quot;
 config.style.page.header.link.font: &quot;small caps&quot;
 config.style.page.footer.font: &quot;16&quot;
 config.style.page.footer.link.font: &quot;small caps&quot;
+config.footer.center: &quot;{back link}&quot;
 --
 
-Use this guide to learn more about what to do if your student tests positive, how long to isolate or quarantine, and other COVID-19 procedures at PHSSA.
+Use this guide to learn more about what to do if you (a staff member or student) tests positive, how long to isolate or quarantine, and other COVID-19 procedures at PHSSA.
 
-How can we help you (or your student)? Click on an item below:
+**Click on an item below to begin:**
 
 &gt; [[Positive Test&lt;-You have received a positive test]]  
 &gt; [[Exposed&lt;-You have been exposed to someone with COVID-19]]  
@@ -29,7 +30,8 @@ Information is provided here for reference only. Official guidance from the PHSS
 
 Information sources:
 * &lt;a href=&quot;https://www.vdh.virginia.gov/content/uploads/sites/182/2021/12/IQ-FAQs-for-K-12-Schools.pdf&quot;&gt;Virginia Department of Health Isolation and Quarantine FAQs for K-12 Schools&lt;/a&gt; interim guidance document (12/30/2021) 
-* &lt;a href=&quot;https://drive.google.com/file/d/1E8WCTKUQVOwL9juK9sN0Fy_fkrvyBhl1/view&quot;&gt;PHSSA Reopening Plan for Fall 2021&lt;/a&gt; interim guidance document (08/19/2021)
+* &lt;a href=&quot;https://drive.google.com/file/d/1E8WCTKUQVOwL9juK9sN0Fy_fkrvyBhl1/view&quot;&gt;PHSSA Reopening Plan for Fall 2021&lt;/a&gt; (08/19/2021)
+* RPS &lt;a href=&quot;https://resources.finalsite.net/images/v1634146576/rvaschoolsnet/doaiutqbk053m3ay0zx8/HealthandSafetyMeasuresforFall2021InPersonInstruction9_8.pdf&quot;&gt;Health and Safety Measures for Fall 2021 In-Person Instruction&lt;/a&gt; (09/09/2021)
 
 
 
@@ -54,7 +56,7 @@ Date of Exposure: {text input for: &#39;dateExposed&#39;}
 
 Are you fully vaccinated?
 
-Adults: This includes two doses of Pfizer/Moderna or one of J&amp;J &#39;&#39;plus&#39;&#39; a booster.  
+Adults: This includes two doses of Pfizer/Moderna or one of J&amp;J **plus** a booster.  
 
 Children: This includes two doses of Pfizer, with the second dose received 2 or more weeks ago.  
 
@@ -62,6 +64,9 @@ Children: This includes two doses of Pfizer, with the second dose received 2 or 
 &gt; [[NoVax&lt;-No, you are not fully vaccinated]]</tw-passagedata><tw-passagedata pid="4" name="YesVax" tags="" position="650,729.5" size="100,100">You do not need to quarantine following an exposure, but should wear a well-fitting mask for 10 days after the exposure when you are around others.
 
 VDH recommends taking a COVID-19 test 5 days after exposure. (Due to testing limitations, a test within 3-5 days after an exposure is acceptable). If you do develop symptoms, you should immediately quarantine until a negative test confirms symptoms are not from COVID-19.
+
+If you have an ongoing exposure to a household member with COVID-19, mask completely until the household member is no longer considered contagious (their day 10), and then begin your own 10 day masking period. To get accurate dates below, {back link, label: &#39;go back&#39;} and enter the household member&#39;s day 10 as Date of Exposure.  (VDH 12/30/2021)
+
 
 ***
 
@@ -83,6 +88,9 @@ Wear a well-fitting mask for an additional 5 days when you are around others.
 
 VDH recommends taking a COVID-19 test 5 days after exposure. (Due to testing limitations, a test within 3-5 days after an exposure is acceptable). If you do develop symptoms, you should immediately quarantine until a negative test confirms symptoms are not from COVID-19.
 
+If you have an ongoing exposure to a household member with COVID-19, you would be considered a close contact. In the absence of updated CDC guidance on this topic, quarantine at home until the household member is no longer considered contagious (day 10), and then begin your own quarantine period. To get accurate dates below, {back link, label: &#39;go back&#39;} and enter the household member&#39;s day 10 as Date of Exposure.  (VDH 12/30/2021)  
+
+
 ***
 
 You were exposed to COVID-19 on {dateExposed}.  
@@ -99,6 +107,8 @@ write(&quot;Do not come to school. Quarantine through &quot; + date.toLocaleDate
 var mask = new Date().addDays(10);
 write(&quot;. Wear a mask at all times around others through &quot; + mask.toLocaleDateString(&#39;en-us&#39;) + &quot; to avoid spreading COVID-19.&quot;);
 
+[continued]
+{back link, label: &#39;Back&#39;}
 </tw-passagedata><tw-passagedata pid="6" name="Asymptomatic" tags="" position="1208,618.5" size="100,100">A shortened isolation period is possible if you are able to wear a mask around others for additional days.
 
 &gt; [[OKMaskAsym&lt;-You are able to wear a well-fitting mask around others]]
@@ -188,18 +198,19 @@ Date.prototype.addDays = function(days) {
 }
 var date = new Date().addDays(10);
 write(&quot;Isolate through &quot; + date.toLocaleDateString(&#39;en-us&#39;) + &quot;.&quot;);
-</tw-passagedata><tw-passagedata pid="11" name="Symptoms" tags="" position="972,512.5" size="100,100">If you (or your student) has
-* A fever of 100.4 or over
-* Vomiting or diarrhea
-* Nasal discharge or difficulty breathing
-* Constant coughing
-* Sore throat
-* Severe headache or earache
-* Uncrontrollable pain
-* Red, irritated eye(s) with pain or drainage
-* A rash of unknown origin
+</tw-passagedata><tw-passagedata pid="11" name="Symptoms" tags="" position="972,512.5" size="100,100">Have you (staff or student) experienced any of the following symptoms in the past 48 hours?  
+* fever (100.4 degrees or higher) accompanied by chills
+* persistent cough
+* shortness of breath or difficulty breathing not contributed to underlying health issues
+* fatigue, muscle or body aches not contributed to underlying health issues
+* new loss of taste or smell
+* sore throat
+* congestion or runny nose
+* nausea, vomiting or diarrhea
 
-Stay home from school, contact your medical provider, and take a COVID-19 test.</tw-passagedata><tw-passagedata pid="12" name="Symptomatic" tags="" position="1383,610.5" size="100,100">dateSym: &#39;MM/DD/YYYY&#39;
+Stay home from work/school that day, monitor your symptoms, and contact a medical professional, as appropriate.  
+
+Source: RPS Health and Safety Measures for Fall 2021 In-Person Instruction Updated September 9, 2021</tw-passagedata><tw-passagedata pid="12" name="Symptomatic" tags="" position="1383,610.5" size="100,100">dateSym: &#39;MM/DD/YYYY&#39;
 --
 
 You have received a positive test and have had symptoms.
